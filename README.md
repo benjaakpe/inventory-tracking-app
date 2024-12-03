@@ -4,42 +4,95 @@
 
 Link to related video: https://www.youtube.com/watch?v=ddKQ8sZo_v8
 
-## Tutorial
+# Overview
 
-This repository contains the code corresponding to an in-depth tutorial available on my YouTube channel. It is highly suggested to watch the [tutorial video](https://www.youtube.com/watch?v=ddKQ8sZo_v8) as it includes detailed instructions on how to set up everything, including deploying AWS. This tutorial is designed for both beginners and experts.
+An advanced, feature-rich Inventory Management Web Application built with a modern tech stack to manage, organize, and monitor inventory efficiently. This application leverages Next.js for the frontend and Node.js for the backend, with seamless integrations for storage, APIs, and cloud hosting.
 
-Join our [Discord community](https://discord.com/channels/1070200085440376872/1267499814678171698) for discussions about this specific app.
+# Features
 
-## Tech Stack
+- Inventory Tracking: Manage and track inventory in real time.
+- Data Grid Integration: Intuitive data table for efficient inventory visualization and manipulation.
+- API Integration: High-performance APIs for CRUD operations using AWS API Gateway.
+- Cloud Hosting: Scalable backend and database hosted on AWS EC2 and AWS RDS.
+- File Uploads: Upload inventory-related documents and images using AWS S3.
 
-- **Next JS**
-- **Tailwind**
-- **Redux Toolkit**
-- **Redux Toolkit Query**
-- **Material UI Data Grid**
-- **Node.js**
-- **Prisma**
-- **AWS EC2**
-- **AWS RDS**
-- **AWS API Gateway**
-- **AWS Amplify**
-- **AWS S3**
+# Tech Stack
 
-## Resources and Links
+## FrontEnd
+- next.js: React-based framework for server-side rendering and static site generation.     
+- Tailwind CSS: Utility-first CSS framework for rapid UI development.     
+- Redux Toolkit: State management with simplified configurations.     
+- Redux Toolkit Query (RTK Query): Efficient data fetching and caching.     
+- Material UI Data Grid: Feature-packed, customizable data grid for data visualization.
 
-### Image Files
+## BackEnd
+- node.js: Backend runtime for building APIs and server logic.     
+- Prisma: Modern ORM for database schema and queries.
 
-- [Server assets to download](https://github.com/ed-roh/inventory-management/tree/master/server/assets)
+## CloudServices
 
-### Configuration and Code
+- AWS EC2: Hosting scalable backend services. 
+- AWS MySQL: Used to store and retrieve data for our application.    
+- AWS RDS: Managed relational database service for reliable database hosting.     
+- AWS API Gateway: Managed API layer for secure and scalable API calls.     
+- AWS Amplify: Simplifies the hosting and deployment of frontend assets.     
+- AWS S3: Cloud storage for file uploads and static assets. 
 
-- [tailwind.config.ts](https://github.com/ed-roh/inventory-management/blob/master/client/tailwind.config.ts) (to copy)
-- [Redux store file](https://github.com/ed-roh/inventory-management/blob/master/client/src/app/redux.tsx) (to copy)
-- [Seed files for database](https://github.com/ed-roh/inventory-management/blob/master/server/prisma/seed.ts) (to copy)
-- [Seed data files](https://github.com/ed-roh/inventory-management/tree/master/server/prisma/seedData) (to download)
+
+# Setup Instructions
+
+## Prerequisites
+
+- Node.js (>=16.0.0)     
+- PostgreSQL Database (or AWS RDS instance)     
+- AWS Account for cloud services     
+- Prisma CLI : npm install -g prisma
+
+## Installation
+
+- Clone the repository: git clone https://github.com/benjaakpe/inventory-tracking-app.git 
+- cd Term-Project-Group-4Install 
+- dependencies: npm install
+- Set up the environment variables
+- Create .env files for both the server and frontend
+- Server ".env":
+- DATABASE_URL=postgresql://username:password@aws-rds-endpoint:5432/database_name
+- AWS_ACCESS_KEY_ID=your-access-key
+- AWS_SECRET_ACCESS_KEY=your-secret-key
+- AWS_REGION=your-region
+- Client ".env.local":
+- NEXT_PUBLIC_API_BASE_URL=https://your-api-gateway-endpoint
+- Initialize Prisma: prisma migrate dev --name init
+- Start the development server: npm run dev
+
+## Deployment
+
+### Frontend     
+- Deploy the Next.js frontend using AWS Amplify hosting service:         
+    - amplify init         
+    - amplify publish     
+    
+### Backend:         
+- Deploy the backend to an AWS EC2 instance.         
+- Use AWS API Gateway to expose backend endpoints.     
+
+### Database:         
+- Use AWS RDS for production-ready PostgreSQL hosting. 
+
+# Usage
+- Visit the deployed application in your browser.          
+- Add, update, delete, and search inventory items using the Material UI Data Grid interface. 
+
+# Contributors
+
+- Mike Henke
+- Benjamin Amoussou
+- Katkoe Teko
+- Patrick Nikiema
+- Uladzimir Lahvinovich
+
 
 ### Additional Resources
 
-- [Data model diagram](https://drawsql.app/teams/team-3023/diagrams/56-inventorymanagement)
-- [Prisma schema file](https://github.com/ed-roh/inventory-management/blob/master/server/prisma/schema.prisma)
 - [AWS commands](https://github.com/ed-roh/inventory-management/blob/master/server/aws-ec2-instructions.md)
+
