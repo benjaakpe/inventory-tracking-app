@@ -1,8 +1,9 @@
 # Build a Fullstack Inventory Management Dashboard
 
-[![Tutorial Video](https://img.youtube.com/vi/ddKQ8sZo_v8/0.jpg)](https://www.youtube.com/watch?v=ddKQ8sZo_v8)
+Click the image below to watch the presentation recording
 
-Link to related video: https://www.youtube.com/watch?v=ddKQ8sZo_v8
+[![Tutorial Video](server\assets\webpage.png)](https://unomail-my.sharepoint.com/personal/aamoussou_unomaha_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Faamoussou%5Funomaha%5Fedu%2FDocuments%2FRecordings%2FCSCI4650%20%2D%20Group%204%2D20241205%5F204217%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E94915a08%2D42ee%2D4ac9%2Dbcf5%2Dacfbf73f13ee)
+
 
 # Overview
 
